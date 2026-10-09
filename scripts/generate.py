@@ -285,13 +285,13 @@ def end_credits():
         y += 92 if big else 72
     y += 20
     rows.append(f'<text x="500" y="{y}" text-anchor="middle" class="s" font-size="11" fill="{SMOKE}" letter-spacing="3">NO BUGS WERE HARMED IN THE MAKING OF THIS SERIES. SOME WERE FIXED.</text>')
-    total = y + 40
+    total = y + 90  # one full loop of the roll, including the gap before it repeats
     dur = total / 22  # ~22 px per second
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="End credits — tech stack">
 <title>End credits — tech stack</title>
 <style>{font_css('bebas', 'inter', 'inter-bold')}
-.roll{{animation:roll {dur:.1f}s linear infinite;animation-delay:-{dur * .28:.1f}s}}
-@keyframes roll{{0%{{transform:translateY({H + 10}px)}}100%{{transform:translateY(-{total}px)}}}}
+.roll{{animation:roll {dur:.1f}s linear infinite}}
+@keyframes roll{{0%{{transform:translateY(40px)}}100%{{transform:translateY({40 - total}px)}}}}
 </style>
 <defs>
   <linearGradient id="fv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{INK}"/><stop offset=".22" stop-color="{INK}" stop-opacity="0"/><stop offset=".78" stop-color="{INK}" stop-opacity="0"/><stop offset="1" stop-color="{INK}"/></linearGradient>
@@ -300,7 +300,7 @@ def end_credits():
 </defs>
 <g clip-path="url(#cf)">
   <rect width="{W}" height="{H}" fill="{INK}"/><rect width="{W}" height="{H}" fill="url(#cg)"/>
-  <g class="roll">{''.join(rows)}</g>
+  <g class="roll"><g>{''.join(rows)}</g><g transform="translate(0 {total})">{''.join(rows)}</g><g transform="translate(0 {2 * total})">{''.join(rows)}</g></g>
   <rect width="{W}" height="{H}" fill="url(#fv)"/>
 </g>
 </svg>"""
