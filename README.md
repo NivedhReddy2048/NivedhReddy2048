@@ -6,7 +6,7 @@
 <br/>
 I build Django platforms, multi-agent RAG systems, computer-vision pipelines and Azure / AWS data pipelines — and ship them to the web.
 
-<a href="https://nivedhreddy.vercel.app"><b>▶ Watch the full series — nivedhreddy.vercel.app</b></a>
+<a href="https://nivedhreddy.vercel.app"><img src="assets/buttons/watch.svg" height="56" alt="Watch the full series — nivedhreddy.vercel.app"/></a>
 
 <br/><br/>
 
@@ -34,9 +34,9 @@ I build Django platforms, multi-agent RAG systems, computer-vision pipelines and
 
 <br/><br/>
 
-<a href="https://nivedhreddy.vercel.app"><img src="https://img.shields.io/badge/Portfolio-nivedhreddy.vercel.app-ff3d5a?style=for-the-badge&labelColor=07070a" alt="Portfolio"/></a>
-<a href="https://www.linkedin.com/in/nivedh-reddy-19074727a"><img src="https://img.shields.io/badge/LinkedIn-Nivedh_Reddy-ff3d5a?style=for-the-badge&labelColor=07070a" alt="LinkedIn"/></a>
-<a href="mailto:nivedhreddypingili@gmail.com"><img src="https://img.shields.io/badge/Email-nivedhreddypingili@gmail.com-ff3d5a?style=for-the-badge&labelColor=07070a" alt="Email"/></a>
+<a href="https://nivedhreddy.vercel.app"><img src="assets/buttons/portfolio.svg" height="48" alt="Portfolio"/></a>
+<a href="https://www.linkedin.com/in/nivedh-reddy-19074727a"><img src="assets/buttons/linkedin.svg" height="48" alt="LinkedIn"/></a>
+<a href="mailto:nivedhreddypingili@gmail.com"><img src="assets/buttons/email.svg" height="48" alt="Email"/></a>
 
 <sub>The continue-watching card and the contribution reel are regenerated every day by a GitHub Action.</sub>
 
